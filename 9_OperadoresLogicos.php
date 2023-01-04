@@ -8,8 +8,8 @@
 </head>
 <body>
     
-    <form action="8_OperadoresComparacionales.php" method="post">
-        Comparamos usando >,<,==,>=,<=.<br/>
+    <form action="9_OperadoresLogicos.php" method="post">
+        Comparamos usando &&.<br/>
         ValorA:
         <input type="text" name="valorA" id=""><br/>
         ValorB:
@@ -23,12 +23,12 @@
 if($_POST){
     $valorA=$_POST['valorA'];
     $valorB=$_POST['valorB'];
-    if($valorA > $valorB){
-        echo "El valor A es mayor que el valor B";
-    }elseif($valorB > $valorA){
-        echo "El valor B es mayor que el valor A";
+    if(($valorA != $valorB)&&($valorA > $valorB)){
+        echo "El valor A es diferente que el valor B y tambien es mayor";
+    }elseif(($valorA != $valorB)||($valorA < $valorB)){
+        echo "El valor A es diferente que el valor B OOOO es menor";
     }else{
-        echo "Ambos valores son iguales";
+        echo "Los valores son iguales";
     }
     
 }
