@@ -1,3 +1,4 @@
+<meta charset="utf-8" />
 <?php
 
     echo "<br/>"."For."."<br/>";
@@ -21,5 +22,18 @@
         echo "num_While ".$numWhile."<br/>";
         $numWhile++;
     }
+echo "<hr />"."<br/>"."Ejercicio WHILE victor robles"."<br/>";
+
+/*Escribe un programa que multiplique los primeros 20 numeros naturales utilizando while. */
+
+$numero = 1;
+$contador = 2;
+
+while ($contador <= 20) {
+    $numero *= $contador;
+    echo $numero."<br/>";
+    $contador++;
+}
+echo "El resultado de multiplicar los 20 primeros números es: ".$numero;
     
 ?>
